@@ -18,6 +18,8 @@ app = FastAPI(title="Fidelity OS - Multi-Agent Engine")
 origins = [
     "http://localhost:3000", 
     "http://127.0.0.1:3000", 
+    "https://fidelity-web-brown.vercel.app",  
+    "*"
 ]
 app.add_middleware(
     CORSMiddleware,
